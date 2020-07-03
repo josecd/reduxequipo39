@@ -1,0 +1,33 @@
+<ion-content>
+
+  <div class="img_div">
+    <img src="assets/icon-image/slide-one.svg">
+  </div>
+  <div class="bubble-bar">
+    <div class="bubble active"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+  <div class="ion-margin-horizontal selcet_div">
+    <div class="time_div first_time">
+      <ion-datetime display-format="hh:mm" class="time_h" picker-format="h:mm A" value="1990-02-19T04:30Z"
+        [(ngModel)]="data.start_time" (ngModelChange)="dateChanged(data.start_time)"> </ion-datetime>
+      <p class="am_p">{{data.start_a}}</p>
+    </div>
+    <div class="time_div">
+      <ion-datetime display-format="hh:mm" class="time_h" picker-format="h:mm A" value="1990-02-19T20:00:00+05:30"
+        [(ngModel)]="data.end_time"></ion-datetime>
+      <p class="am_p">{{data.end_a}}</p>
+    </div>
+  </div>
+  <div class="ion-margin-horizontal text_div">
+    <h3 class="text_p">Set Available Time</h3>
+    <p class="detail_p">There are many variations of passages of Lorem Ipsum available, but the majority have
+      suffered alteration in some form, by injected humor.</p>
+  </div>
+  <div class="save_btn_div">
+    <ion-button class="save_btn" (click)="service()">
+      Save
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header no-border>
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" icon="ios-arrow-back" text="" mode="md"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Notification</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_div ion-margin-horizontal">
+    <div class="card_div" *ngFor="let item of data.notification">
+      <div class="img_div">
+        <img [src]="item.image">
+      </div>
+      <div class="data_div">
+        <h3 class="name">{{item?.name}}</h3>
+        <p class="type">{{item?.type}} <span class="ion-float-right">{{item?.msg}}</span></p>
+      </div>
+    </div>
+  </div>
+</ion-content>

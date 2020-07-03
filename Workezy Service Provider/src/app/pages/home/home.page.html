@@ -1,0 +1,65 @@
+<ion-header no-border>
+  <ion-toolbar mode="md">
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <div (click)="presentAlertRadio()" class="locationContent">
+      <img src="../../assets/image/location.png">
+      <div class="textContent">
+        <h2 class="location">{{selectedLocation}} <img src="../../assets/icon-image/BACK.svg"> </h2>
+        <p class="address">Rain Charam House Park, London</p>
+      </div>
+    </div>
+  </ion-toolbar>
+  <ion-searchbar clearIcon="string" searchIcon="../../../assets/icon-image/search-engine.svg"
+    placeholder="Search for Sevice Provider"></ion-searchbar>
+</ion-header>
+
+<ion-content>
+  <p class="heading_p">Ongoing Work</p>
+  <div class="ongoing_div ion-margin-start ion-margin-end">
+    <div class="img_div" *ngFor="let item of data.ongoing">
+      <img [src]="item.image">
+      <div class="info_div ">
+        <h3 class="name">{{item?.name}}</h3>
+        <p class="type">{{item?.type}} <span class="ion-float-right">{{item?.time}}</span></p>
+      </div>
+    </div>
+  </div>
+  <p class="heading_p">Available Work<span class="ion-float-right">
+      <ion-button class="trans-btn" (click)="service()">See all</ion-button>
+    </span></p>
+  <div class="available_div ion-margin-horizontal">
+
+    <div class="card_div" *ngFor="let item of data.available">
+      <div class="div_img">
+        <img [src]="item?.image">
+      </div>
+      <div class="data_div" (click)="service()">
+        <ion-button class="approve_btn">Approve</ion-button>
+        <h3 class="user">{{item?.name}}</h3>
+        <p class="type">{{item?.type}}</p>
+        <p class="date">Date:{{item?.date}} Time:<span>{{item?.time}}</span></p>
+        <p class="address">Address: <span>{{item?.address}}</span></p>
+      </div>
+    </div>
+  </div>
+  <p class="heading_p">Send Work Offer<span class="ion-float-right">
+      <ion-button class="trans-btn">See all</ion-button>
+    </span></p>
+  <div class="available_div ion-margin-horizontal">
+
+    <div class="card_div" *ngFor="let item of data.send">
+      <div class="div_img">
+        <img [src]="item?.image">
+      </div>
+      <div class="data_div">
+        <ion-button class="approve_btn">Send offer</ion-button>
+        <h3 class="user">{{item?.name}}</h3>
+        <p class="type">{{item?.type}}</p>
+        <p class="date">Date:{{item?.date}} Time:<span>{{item?.time}}</span></p>
+        <p class="address">Address: <span>{{item?.address}}</span></p>
+      </div>
+    </div>
+  </div>
+</ion-content>

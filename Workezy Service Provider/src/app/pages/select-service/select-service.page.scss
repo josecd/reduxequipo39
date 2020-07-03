@@ -1,0 +1,92 @@
+ion-content {
+  .img_div {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+  .active {
+    opacity: 1;
+  }
+  .service_div {
+    margin-top: 25px;
+  }
+  ion-row {
+    ion-col {
+      width: 31%;
+      position: relative;
+      min-width: 30%;
+      box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+      margin-right: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      .icon_div {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: var(--ion_color_main);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 6px;
+        color: var(--ion_white);
+        margin-top: 5px;
+      }
+      .name_p {
+        font-size: 12px;
+        font-family: 'Roboto_Medium';
+        color: var(--ion_dark_blue);
+        margin-top: 30px;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+      .treading {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        background-color: var(--ion_trending);
+        height: 15px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          font-size: 9px;
+          color: var(--ion_white);
+          font-family: 'Roboto_Regular';
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  ion-row :nth-child(3n + 3) {
+    margin-right: 0px;
+  }
+  .text_div {
+    text-align: center;
+    padding-top: 30px;
+    .text_p {
+      font-size: 25px;
+      font-family: 'Roboto_Medium';
+      color: var(--ion_dark_blue);
+      text-transform: uppercase;
+    }
+    .detail_p {
+      font-size: 14px;
+      font-family: 'Roboto_Regular';
+      color: var(--ion_dark_gray);
+    }
+  }
+
+  .active {
+    background-color: var(--ion_color_main);
+    .icon_div {
+      background-color: var(--ion_white) !important;
+      ion-icon {
+        color: var(--ion_color_main);
+      }
+    }
+    .name_p {
+      color: var(--ion_white) !important;
+    }
+  }
+}

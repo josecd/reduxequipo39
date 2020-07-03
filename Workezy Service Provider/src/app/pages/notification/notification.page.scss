@@ -1,0 +1,47 @@
+ion-header {
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+}
+ion-content {
+  .main_div {
+    margin-top: 20px;
+    .card_div {
+      display: flex;
+      margin-bottom: 15px;
+
+      .img_div {
+        img {
+          border-radius: 5px;
+          height: 50px;
+          width: 50px;
+          max-width: none;
+        }
+      }
+      .data_div {
+        width: -webkit-fill-available;
+        margin-left: 13px;
+        border-bottom: solid 1px var(--ion_border);
+        .name {
+          font-size: 16px;
+          color: var(--ion_dark_blue);
+          font-family: 'Roboto_Medium';
+          margin: 0px;
+        }
+        .type {
+          font-size: 13px;
+          font-family: 'Roboto_Regular';
+          color: var(--ion_type_gray);
+          margin-top: 10px;
+          margin-bottom: 0px;
+
+          span {
+            font-size: 10px;
+            font-family: 'Roboto_Medium';
+            color: var(--ion_color_main);
+            text-transform: uppercase;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+}

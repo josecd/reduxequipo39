@@ -1,0 +1,103 @@
+<ion-header no-border>
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" icon="ios-arrow-back" text="" mode="md"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Payment</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="current_div">
+    <div class="data_div">
+      <p class="rtype_p">{{data?.type}}</p>
+      <div class="user_div ion-margin-horizontal">
+        <div class="img_div">
+          <img [src]="data.image">
+        </div>
+        <div class="detail_div">
+          <p class="name_p">{{data?.name}} <span class="ion-float-right">{{data?.date}}</span></p>
+          <p class="detail_p">{{data?.detail}}</p>
+        </div>
+      </div>
+      <ion-row class="ion-margin-horizontal margin-top">
+        <ion-col class="ion-no-padding">
+          <p class="time_p">Date:<span> {{data?.rdate}}</span></p>
+        </ion-col>
+        <ion-col class="ion-no-padding">
+          <p class="time_p">Time: <span> {{data?.Stime}} To {{data?.Etime}}</span></p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-margin-horizontal">
+        <ion-col class="ion-no-padding">
+          <p class="time_p">ID No:<span> {{data?.id}}</span></p>
+        </ion-col>
+        <ion-col class="ion-no-padding">
+          <p class="time_p">Payment Method: <span> {{data?.payment}}</span></p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-margin-horizontal">
+        <ion-col class="ion-no-padding">
+          <p class="time_p">Fare:<span> {{data?.fare}}</span></p>
+        </ion-col>
+        <ion-col class="ion-no-padding">
+          <p class="time_p">Total Time: <span> {{data?.totalTime}}</span></p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-margin-horizontal margin-bottom">
+        <ion-col class="ion-no-padding">
+          <p class="time_p">Pay:<span> ${{data?.pay}}</span></p>
+        </ion-col>
+        <ion-col class="ion-no-padding">
+
+        </ion-col>
+      </ion-row>
+      <div class="md-stepper-horizontal orange">
+        <div class="md-step active done">
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-circle">
+            <ion-icon name="checkmark" mode="md"></ion-icon>
+          </div>
+          <div class="md-step-title">Post Request</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step active editable">
+          <div class="md-step-circle">
+            <ion-icon name="checkmark" mode="md"></ion-icon>
+          </div>
+          <div class="md-step-title">Approved</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step active workdone">
+          <div class="md-step-circle">
+            <ion-icon name="checkmark" mode="md"></ion-icon>
+          </div>
+          <div class="md-step-title">Work Done</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step last_status">
+          <div class="md-step-circle"><span>
+              <ion-icon name="checkmark" mode="md"></ion-icon>
+            </span></div>
+          <div class="md-step-title">Payment</div>
+          <div class="md-step-bar-left last_bar"></div>
+          <div class="md-step-bar-right last_bar"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="success_div ion-margin-horizontal">
+    <div class="congratulation">
+      <img src="assets/image/right-img.png">
+      <h3 class="name">Congratulations</h3>
+      <p class="text">Your Payment Successful Received</p>
+    </div>
+  </div>
+</ion-content>

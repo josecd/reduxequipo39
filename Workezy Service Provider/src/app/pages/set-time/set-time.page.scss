@@ -1,0 +1,62 @@
+ion-content {
+  .img_div {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+  .active {
+    opacity: 1;
+  }
+  .selcet_div {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    .time_div {
+      height: 100px;
+      width: 100px;
+      box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .time_h {
+        font-size: 20px;
+        font-family: 'Roboto_Bold';
+        color: var(--ion_color_main);
+        text-align: center;
+        padding-left: 0px;
+      }
+      .am_p {
+        font-size: 16px;
+        font-family: 'Roboto_Medium';
+        color: var(--ion_type_gray);
+        position: absolute;
+        bottom: 0;
+        margin-top: 0px;
+        margin-bottom: 7px;
+        right: 15px;
+      }
+    }
+    .first_time {
+      margin-right: 20px;
+    }
+  }
+
+  .text_div {
+    text-align: center;
+    padding-top: 30px;
+    .text_p {
+      font-size: 25px;
+      font-family: 'Roboto_Medium';
+      color: var(--ion_dark_blue);
+      text-transform: uppercase;
+    }
+    .detail_p {
+      font-size: 14px;
+      font-family: 'Roboto_Regular';
+      color: var(--ion_dark_gray);
+    }
+  }
+}

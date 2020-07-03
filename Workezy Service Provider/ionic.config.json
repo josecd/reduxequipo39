@@ -1,0 +1,7 @@
+{
+  "name": "workezy_service_provider",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

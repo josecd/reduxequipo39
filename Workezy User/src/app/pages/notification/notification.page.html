@@ -1,0 +1,33 @@
+<ion-header no-border>
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/home" icon="ios-arrow-back" text="" mode="md"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Notification</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="data_div">
+    <ion-item *ngFor="let item of data?.notification">
+      <img [src]="item?.image" slot="start">
+      <ion-label>
+        <h3 class="name">{{item?.name}} <span class="ion-float-right"> ${{item?.price}}</span></h3>
+        <h3 class="type">{{item?.type}} </h3>
+        <p class="rate">
+          <ion-icon name="star" [class]="item?.rate >=1 ? 'icon_color':'icon_deafault'"></ion-icon>
+          <ion-icon name="star" [class]="item?.rate >=2 ? 'icon_color':'icon_deafault'"></ion-icon>
+          <ion-icon name="star" [class]="item?.rate >=3 ? 'icon_color':'icon_deafault'"></ion-icon>
+          <ion-icon name="star" [class]="item?.rate >=4 ? 'icon_color':'icon_deafault'"></ion-icon>
+          <ion-icon name="star" [class]="item?.rate >=5 ? 'icon_color':'icon_deafault'"></ion-icon>
+          <span class="review">{{item?.review}} Review</span>
+          <span class="ion-float-right instant">{{item?.isAvail}}</span>
+
+        </p>
+      </ion-label>
+    </ion-item>
+  </div>
+</ion-content>

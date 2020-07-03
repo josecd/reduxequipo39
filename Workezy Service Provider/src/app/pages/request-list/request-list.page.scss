@@ -1,0 +1,110 @@
+ion-header {
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+  ion-row {
+    border-top: 1px solid var(--ion-color-border);
+    height: 44px;
+    ion-col {
+      .dot {
+        height: 7px;
+        width: 7px;
+        position: absolute;
+        top: 18px;
+        background-color: var(--ion_color_main);
+        border-radius: 50%;
+      }
+      .left_dot {
+        left: 0;
+      }
+      .right_dot {
+        right: 0px;
+      }
+      .btn-div {
+        display: flex;
+        width: fit-content;
+        margin: 8px auto;
+        font-size: 15px;
+        font-family: 'Roboto_Medium';
+        color: var(--ion_dark_blue);
+        text-align: center;
+      }
+      .active {
+        color: var(--ion_color_main) !important;
+      }
+    }
+  }
+}
+
+ion-content {
+  .available_div {
+    margin-top: 25px;
+
+    .card_div {
+      display: flex;
+      margin-bottom: 8px;
+
+      .div_img {
+        img {
+          border-radius: 5px;
+          height: 78px;
+          width: 87px;
+        }
+      }
+      .data_div {
+        padding-left: 10px;
+        position: relative;
+
+        .approve_btn {
+          position: absolute;
+          top: 0;
+          right: 0;
+          --background: var(--ion_color_main);
+          --color: var(--ion_white);
+          width: 70px;
+          height: 23px;
+          font-size: 11px;
+          font-family: 'Roboto_Medium';
+          text-transform: capitalize;
+          --border-radius: 2px;
+          --box-shadow: none;
+          margin: 0px;
+        }
+        .user {
+          font-size: 14px;
+          font-family: 'Roboto_Medium';
+          color: var(--ion_dark_blue);
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+        .type {
+          font-size: 11px;
+          font-family: 'Roboto_Medium';
+          color: var(--ion_dark_gray);
+          margin-top: 0px;
+          margin-bottom: 3px;
+        }
+        .date {
+          font-size: 11px;
+          font-family: 'Roboto_Medium';
+          color: var(--ion_dark_blue);
+          margin-top: 0px;
+          margin-bottom: 3px;
+          span {
+            color: var(--ion_type_gray);
+            margin-left: 2px;
+          }
+        }
+        .address {
+          font-size: 11px;
+          font-family: 'Roboto_Medium';
+          color: var(--ion_dark_blue);
+          margin-top: 0px;
+          margin-bottom: 3px;
+          span {
+            color: var(--ion_type_gray);
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+  }
+}

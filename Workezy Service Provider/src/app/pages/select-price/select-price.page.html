@@ -1,0 +1,32 @@
+<ion-content>
+  <div class="img_div">
+    <img src="assets/icon-image/slide-third.svg">
+  </div>
+  <div class="bubble-bar">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble active"></div>
+  </div>
+  <div class="price_div">
+    <div class="slect_div">
+      <div class="data_div">
+        <div class="price">${{price | number:'1.1-2'}}</div>
+        <div class="arrow_div">
+          <ion-icon src="assets/icon-image/up_polygon.svg" (click)="upValue()"></ion-icon>
+          <ion-icon src="assets/icon-image/down_polygon.svg" (click)="downValue()"></ion-icon>
+        </div>
+        <p class="per_p"> Per hour</p>
+      </div>
+    </div>
+  </div>
+  <div class="text_div ion-margin-horizontal">
+    <h3 class="text_p">Services Price</h3>
+    <p class="detail_p">There are many variations of passages of Lorem Ipsum available, but the majority have
+      suffered alteration in some form, by injected humor.</p>
+  </div>
+  <div class="btn_div">
+    <ion-button class="save_btn" (click)="gotoHome()">
+      Save
+    </ion-button>
+  </div>
+</ion-content>

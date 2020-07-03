@@ -1,0 +1,32 @@
+<ion-content>
+  <div class="img_div">
+    <img src="assets/icon-image/slide-two.svg" />
+  </div>
+  <div class="bubble-bar">
+    <div class="bubble"></div>
+    <div class="bubble active"></div>
+    <div class="bubble"></div>
+  </div>
+  <div class="service_div ion-margin-horizontal">
+    <ion-row>
+      <ion-col *ngFor="let item of data?.services" (click)="service(item)" [ngClass]="{'active': item.active==true}">
+        <div class="icon_div">
+          <ion-icon [src]="item?.image"> </ion-icon>
+        </div>
+        <p class="name_p">{{item?.name}}</p>
+      </ion-col>
+    </ion-row>
+    <div class="text_div">
+      <h3 class="text_p">Service Provide</h3>
+      <p class="detail_p">
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humor.
+      </p>
+    </div>
+  </div>
+  <div class="save_btn_div">
+    <ion-button class="save_btn" (click)="price()">
+      Save
+    </ion-button>
+  </div>
+</ion-content>

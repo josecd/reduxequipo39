@@ -1,0 +1,84 @@
+<ion-header no-border>
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" icon="ios-arrow-back" text="" mode="md"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Approved Booking</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="current_div">
+    <div class="data_div" *ngFor="let item of data?.current">
+      <p class="rtype_p">{{item?.type}}</p>
+      <div class="user_div ion-margin-horizontal">
+        <div class="img_div">
+          <img [src]="item.image">
+        </div>
+        <div class="detail_div">
+          <p class="name_p">{{item?.name}} <span class="ion-float-right">{{item?.date}}</span></p>
+          <p class="detail_p">{{item?.detail}}</p>
+        </div>
+      </div>
+      <ion-row class="ion-margin-horizontal margin-top">
+        <ion-col class="ion-no-padding">
+          <p class="time_p">Date:<span> {{item?.rdate}}</span></p>
+        </ion-col>
+        <ion-col class="ion-no-padding">
+          <p class="time_p">Time: <span> {{item?.time}}</span></p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-margin-horizontal margin-bottom">
+        <ion-col class="ion-no-padding">
+          <p class="time_p">ID No:<span> {{item?.id}}</span></p>
+        </ion-col>
+        <ion-col class="ion-no-padding">
+          <p class="time_p">Payment Method: <span> {{item?.payment}}</span></p>
+        </ion-col>
+      </ion-row>
+
+      <div class="md-stepper-horizontal orange">
+        <div class="md-step active done">
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-circle">
+            <ion-icon name="checkmark" mode="md"></ion-icon>
+          </div>
+          <div class="md-step-title">Post Request</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step active editable">
+          <div class="md-step-circle">
+            <ion-icon name="checkmark" mode="md"></ion-icon>
+          </div>
+          <div class="md-step-title">Approved</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step active workdone">
+          <div class="md-step-circle">
+            <ion-icon name="checkmark" mode="md"></ion-icon>
+          </div>
+          <div class="md-step-title">Work Done</div>
+          <div class="md-step-bar-left"></div>
+          <div class="md-step-bar-right"></div>
+        </div>
+        <div class="md-step last_status">
+          <div class="md-step-circle"><span></span></div>
+          <div class="md-step-title">Payment</div>
+          <div class="md-step-bar-left last_bar"></div>
+          <div class="md-step-bar-right last_bar"></div>
+        </div>
+      </div>
+
+      <div class="btn_div ion-margin-horizontal">
+        <ion-button class="otp_btn" (click)="cancelbtn()">
+          Cancel
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

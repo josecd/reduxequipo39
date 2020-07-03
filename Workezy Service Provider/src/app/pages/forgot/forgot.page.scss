@@ -1,0 +1,34 @@
+ion-content {
+  .main_div {
+    margin-top: 30px;
+    p {
+      font-family: 'Roboto_Medium';
+      color: var(--ion_color_main);
+      font-size: 16px;
+      padding: 0px 30px;
+    }
+    .dataitem {
+      box-shadow: 0px 2px 5px 0px rgba(122, 87, 209, 0.25);
+      border-radius: 25px;
+      margin-bottom: 20px;
+      margin-top: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+      ion-input {
+        font-size: 14px;
+      }
+      ion-icon {
+        height: 15px;
+        width: 18px;
+        margin-right: 18px;
+      }
+    }
+    ion-button {
+      margin: 0;
+      --border-radius: 25px;
+      margin-top: 20px;
+      height: 46px;
+      --box-shadow: none;
+    }
+  }
+}

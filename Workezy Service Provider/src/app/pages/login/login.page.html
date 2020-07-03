@@ -1,0 +1,53 @@
+<ion-content>
+  <img src="assets/image/upper-design.png" class="silde_img">
+  <div class="img_div_log">
+    <img src="assets/image/login_img.png">
+    <h3 class="name">Workezy</h3>
+    <p class="sub">where we make your work easier</p>
+    <p class="tittle">SIGN IN</p>
+  </div>
+  <form class="ion-margin-horizontal">
+    <ion-item lines="none" mode="md">
+      <ion-icon src="assets/icon-image/man.svg" slot="start"></ion-icon>
+      <ion-input required type="text" placeholder="Ryan Cooper"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="item_div" mode="md">
+      <ion-icon src="assets/icon-image/padlock.svg" slot="start"></ion-icon>
+      <ion-input required [type]="showPassword == true ? 'text' : 'password'" placeholder="* * * * * * * *"></ion-input>
+      <ion-button class="trans-btn eye_btn" (click)="showPassword = !showPassword">
+        <ion-icon *ngIf="!showPassword" name="eye"></ion-icon>
+        <ion-icon *ngIf="showPassword" name="eye-off"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col class="ion-text-end">
+        <ion-button class="forgot-btn ion-text-capitalize trans-btn" (click)="forgotPassword()">forgot password?
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-button class="otp_btn sign_btn" (click)="sign_in()">
+      Sign in
+    </ion-button>
+  </form>
+  <div class="later_div ion-text-center">
+
+    <p class="or_p">OR</p>
+    <div class="btn_div">
+      <ion-button class="fb_btn">
+        <ion-icon src="assets/icon-image/fb_icon.svg"></ion-icon>
+      </ion-button>
+      <ion-button class="gol_btn">
+        <ion-icon name="logo-googleplus"></ion-icon>
+      </ion-button>
+      <ion-button class="tw_btn">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+  <p class="last_p">Here for the first time? <ion-button class="trans-btn signup_btn" (click)="signup()">Sign up
+    </ion-button>
+  </p>
+</ion-content>
