@@ -11,6 +11,17 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/home/home.module').then(m => m.HomePageModule)
   },
+  
+  {
+    path: 'producto/:id',
+    loadChildren: () =>
+      import('./component/product-scan/product-scan.module').then(m => m.ProductScanPageModule)
+  },
+  {
+    path: 'home2/id',
+    loadChildren: () =>
+      import('./pages/home/home.module').then(m => m.HomePageModule)
+  },
   {
     path: 'login',
     loadChildren: () =>
@@ -111,6 +122,10 @@ const routes: Routes = [
       import('./pages/change-password/change-password.module').then(
         m => m.ChangePasswordPageModule
       )
+  },
+  {
+    path: 'product-scan',
+    loadChildren: () => import('./component/product-scan/product-scan.module').then( m => m.ProductScanPageModule)
   }
 ];
 
