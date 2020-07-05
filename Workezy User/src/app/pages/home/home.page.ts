@@ -11,56 +11,29 @@ export class HomePage {
   data: any = {
     services: [
       {
-        image: 'assets/icon-image/beaut_img.svg',
-        name: 'Beauty & Spa',
-        label: 'Trending'
+        image: 'assets/icon-image/bolsa-de-plastico.svg',
+        name: 'Plástico',
       },
       {
-        image: 'assets/icon-image/repair_icon.svg',
-        name: 'Appliance Repair'
+        image: 'assets/icon-image/toalla.svg',
+        name: 'Tela'
       },
       {
-        image: 'assets/icon-image/travel.svg',
-        name: 'Travel '
+        image: 'assets/icon-image/caja.svg',
+        name: 'Cartón '
       },
       {
-        image: 'assets/icon-image/repair_icon.svg',
-        name: 'Wedding & Event'
+        image: 'assets/icon-image/engranaje.svg',
+        name: 'Metal'
       },
       {
-        image: 'assets/icon-image/Cockroach.svg',
-        name: 'Pest Control'
+        image: 'assets/icon-image/madera.svg',
+        name: 'Madera'
       },
       {
-        image: 'assets/icon-image/cityscape.svg',
-        name: 'Real Estate',
-        label: 'Trending'
+        image: 'assets/icon-image/copa-de-vino.svg',
+        name: 'Vidrio'
       },
-      {
-        image: 'assets/icon-image/service-img.svg',
-        name: 'Business Services'
-      },
-      {
-        image: 'assets/icon-image/hobbies.svg',
-        name: 'Hobbies',
-        label: 'Trending'
-      },
-      {
-        image: 'assets/icon-image/health.svg',
-        name: 'Health Care'
-      },
-      {
-        image: 'assets/icon-image/job-icon.svg',
-        name: 'Job'
-      },
-      {
-        image: 'assets/icon-image/rent-car.svg',
-        name: 'Rent & Hire'
-      },
-      {
-        image: 'assets/icon-image/more-icon.svg',
-        name: 'More'
-      }
     ]
   };
 

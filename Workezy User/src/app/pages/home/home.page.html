@@ -3,37 +3,30 @@
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <div (click)="presentAlertRadio()" class="locationContent">
-      <img src="../../assets/image/location.png">
-      <div class="textContent">
-        <h2 class="location">{{selectedLocation}} <img src="../../assets/icon-image/BACK.svg"> </h2>
-        <p class="address">Rain Charam House Park, London</p>
-      </div>
-    </div>
   </ion-toolbar>
   <ion-searchbar clearIcon="string" placeholder="Search for Sevice Provider"
     searchIcon="../../assets/icon-image/search-engine.svg"></ion-searchbar>
 </ion-header>
 
 <ion-content>
-  <p class="ion-padding-horizontal first_p">100+ SERVICE PROVIDER
+  <p class="ion-padding-horizontal first_p">6 Categorías
     <span class="ion-float-right">
       <ion-icon src="assets/icon-image/controls.svg"></ion-icon>
-      FILTER
+      Filtro
     </span></p>
   <div class="img_div">
-    <p class="text">Find Your Service and Book Easy</p>
+    <p class="text">Empresa a publicitar</p>
     <img src="assets/icon-image/home_layer03.svg">
-  </div>
+  </div> 
   <div class="ion-margin-horizontal service_div">
-    <p class="service_p">SEVICE BY CATEGORIES <span class="ion-float-right">See all</span></p>
+    <p class="service_p">Categorías de los residuos <span class="ion-float-right">Ver todas</span></p>
     <ion-row>
       <ion-col *ngFor="let item of data?.services" (click)="detail()">
         <div class="treading" *ngIf="item?.label">
           <span>{{item?.label}}</span>
         </div>
-        <div class="icon_div">
-          <img [src]="item?.image">
+        <div class="">
+          <img [src]="item?.image" width="70" style="margin-left:15px;">
         </div>
         <p class="name_p">{{item?.name}}</p>
       </ion-col>
