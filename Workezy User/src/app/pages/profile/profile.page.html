@@ -8,7 +8,6 @@
         <ion-icon src="assets/icon-image/edit.svg"></ion-icon>
       </ion-button>
       <ion-button class="btn-save" *ngIf="editbtn==1" (click)="saveData()">
-        Save
       </ion-button>
     </ion-buttons>
 
@@ -20,26 +19,18 @@
     </div>
   </div>
 
-  <h3 class="name">Harry Garrett</h3>
-  <p class="email">harrygarrett@gmail.com</p>
+  <h3 class="name">Marcos Perez</h3>
+  <p class="email">marcosp@gmail.com</p>
 </ion-header>
 
 <ion-content>
   <form class="ion-margin-horizontal">
     <ion-item lines="none" class="item_div">
-      <ion-label position="stacked" class="lbl_name" mode="md">Name</ion-label>
-      <ion-input required type="text" [value]="data?.name" [readonly]="editbtn == 0 ? 'true':'false'"></ion-input>
+      <ion-label position="stacked" class="lbl_name" mode="md">Ecocreditos</ion-label>
+      <ion-input required type="text" [value]="data?.ranking" [readonly]="editbtn == 0 ? 'true':'false'"></ion-input>
     </ion-item>
     <ion-item lines="none" class="item_div">
-      <ion-label position="stacked" class="lbl_name" mode="md">Email</ion-label>
-      <ion-input required type="text" [value]="data?.email" [readonly]="editbtn == 0 ? 'true':'false'"></ion-input>
-    </ion-item>
-    <ion-item lines="none" class="item_div">
-      <ion-label position="stacked" class="lbl_name" mode="md">Phone number</ion-label>
-      <ion-input required type="text" [value]="data?.phone" [readonly]="editbtn == 0 ? 'true':'false'"></ion-input>
-    </ion-item>
-    <ion-item lines="none" class="item_div">
-      <ion-label position="stacked" class="lbl_name" mode="md">Address</ion-label>
+      <ion-label position="stacked" class="lbl_name" mode="md">Dirección</ion-label>
       <ion-input required type="text" [value]="data?.address" [readonly]="editbtn == 0 ? 'true':'false'"></ion-input>
     </ion-item>
   </form>

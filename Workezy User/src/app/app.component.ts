@@ -10,6 +10,10 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { menuController } from '@ionic/core';
 import { Router } from '@angular/router';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+providers: [
+  BarcodeScanner
+]
 
 @Component({
   selector: 'app-root',

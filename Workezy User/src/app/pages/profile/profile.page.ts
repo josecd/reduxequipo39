@@ -8,10 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ProfilePage implements OnInit {
   editbtn: any = 0;
   data: any = {
-    name: 'Larry Gordon',
-    email: 'larrygordon@gmail.com',
-    phone: '+44 903 365 8768',
-    address: 'Rain Charm House Park, London'
+    ranking: '100 ecocreditos',
+    address: 'Cancún, Quintana Roo'
   };
   constructor() {}
 
