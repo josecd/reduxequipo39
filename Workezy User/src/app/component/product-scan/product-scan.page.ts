@@ -11,30 +11,6 @@ export class ProductScanPage implements OnInit {
   data: any = {
     best: [
       {
-        image: 'assets/icon-image/air-conditioner.svg',
-        name: 'AC'
-      },
-      {
-        image: 'assets/icon-image/car_icon.svg',
-        name: 'Car'
-      },
-      {
-        image: 'assets/icon-image/computer.svg',
-        name: 'Computer'
-      },
-      {
-        image: 'assets/icon-image/laptop.svg',
-        name: 'Laptop'
-      },
-      {
-        image: 'assets/icon-image/mobile.svg',
-        name: 'Mobile Phone'
-      },
-      {
-        image: 'assets/icon-image/motorcycle.svg',
-        name: 'Motorcycle'
-      },
-      {
         image: 'assets/icon-image/freez.svg',
         name: 'Refrigerator'
       },
